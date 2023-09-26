@@ -5,13 +5,13 @@ public class HeapSort {
             heapify(array, array.length, i);
 
         // Один за другим извлекаем элементы из кучи
-        for (int i = array.length - 1; i >= 0 ; i) {
+        for (int i = array.length - 1; i >= 0 ; i--) {
             //Перемещаем текущий корень в конец
             int temp = array[0];
             array[0]= array[i];
             array[i] = temp;
 
-            //Выpsdftv процедуру heapify на уменьшенной куче
+            //Вызываем процедуру heapify на уменьшенной куче
             heapify(array, i, 0);
 
         }
