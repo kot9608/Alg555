@@ -1,3 +1,5 @@
+//Курс - Алгоритмы и структуры данных
+
 public class HeapSort {
     public static void sort (int []array) {
         //Построение кучи (перегруппируем массив)
